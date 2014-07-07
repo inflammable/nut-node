@@ -1,0 +1,15 @@
+{
+  "name": "nut-node",
+  "version": "0.0.1",
+  "description": "A nodejs interface to the Network UPS Tools telnet-like interface.",
+  "main": "application.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nut",
+    "ups"
+  ],
+  "author": "Stuart King",
+  "license": "ISC"
+}
