@@ -13,7 +13,6 @@ upsData.on('connect', function() {
 });
 
 upsData.connect();
-
 ```
 See [example.js](example.js) for the example used to generate the output below.
 
@@ -110,3 +109,10 @@ See [example.js](example.js) for the example used to generate the output below.
   }
 }
 ```
+
+##ToDo
+
+* Return actual error messages from NUT
+* Add LIST CMD, LIST RW, LIST ENUM, LIST RANGE, LIST CLIENT, SET, INSTCMD and LOGOUT. Also VER?
+* STARTTLS support?
+
