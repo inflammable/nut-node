@@ -1,9 +1,9 @@
-var UPS = require('./application');
+var UPS = require('./index');
+var upsName;
 
-var upsName,
-    getVoltage = function() {
-      upsData.var(upsName, "output.voltage");
-    };
+function getVoltage() {
+  upsData.var(upsName, "output.voltage");
+};
 
 var upsData = new UPS(false, false, {username: "test", password: "test", login: true});
 
@@ -33,4 +33,3 @@ upsData.on('var', function(data){
 });
 
 upsData.connect();
-
