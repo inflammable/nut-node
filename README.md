@@ -1,7 +1,10 @@
 nut-node
 ========
 
-A rough event based Node Module for interacting with a Network UPS Tool server which implements LIST UPS, LIST VARS and GET VARS and returns UPS information as a JavaScript Object.
+A rough event based Node Module for interacting with a [Network UPS Tools](http://www.networkupstools.org/) server which implements LIST UPS, LIST VARS and GET VARS and returns UPS information as a JavaScript Object. In short, a Node NUT client.
+
+##Prerequisites
+Network UPS Tools configured and running and accessible from whereever this script is running.
 
 ##Usage
 ```
@@ -113,6 +116,6 @@ See [example.js](example.js) for the example used to generate the output below.
 ##ToDo
 
 * Return actual error messages from NUT
-* Add LIST CMD, LIST RW, LIST ENUM, LIST RANGE, LIST CLIENT, SET, INSTCMD and LOGOUT. Also VER?
+* Add LIST CMD, LIST RW, LIST ENUM, LIST RANGE, LIST CLIENT, SET, INSTCMD and LOGOUT. Also VER? See: http://www.networkupstools.org/docs/developer-guide.chunked/ar01s09.html
 * STARTTLS support?
 
