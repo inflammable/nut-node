@@ -12,6 +12,8 @@ upsData.on('connect', function() {
   console.log("Connected!");
 });
 
+upsData.connect();
+
 ```
 See [example.js](example.js) for the example used to generate the output below.
 
