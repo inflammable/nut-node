@@ -34,7 +34,13 @@ See [example.js](example.js) for the example used to generate the output below.
 
 ###UPS LIST
 ```JavaScript
-[{ deviceName: 'cyberpower', humanName: 'NAS UPS', data: [] }]
+[
+  {
+    deviceName: 'cyberpower',
+    humanName: 'NAS UPS',
+    data: []
+  }
+]
 ```
 
 ###LIST VARS
