@@ -33,12 +33,12 @@ See [example.js](example.js) for the example used to generate the output below.
 ##Output
 
 ###UPS LIST
-```JSON
+```JavaScript
 [{ deviceName: 'cyberpower', humanName: 'NAS UPS', data: [] }]
 ```
 
 ###LIST VARS
-```JSON
+```JavaScript
 {
   deviceName: 'cyberpower',
   humanName: 'NAS UPS',
@@ -86,7 +86,7 @@ See [example.js](example.js) for the example used to generate the output below.
 ```
 
 ###GET VAR
-```JSON
+```JavaScript
 {
   deviceName: 'cyberpower',
   humanName: 'NAS UPS',
