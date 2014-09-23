@@ -1,20 +1,44 @@
 nut-node
 ========
 
-A rough node Module for interacting with a Network UPS Tool server which implements LIST UPS, LIST VARS and GET VARS and returns UPS information in JSON.
+A rough event based Node Module for interacting with a Network UPS Tool server which implements LIST UPS, LIST VARS and GET VARS and returns UPS information as a JavaScript Object.
 
 ##Usage
-See `example.js` for working example.
+```
+var UPS = require('nut-node');
+var upsData = new UPS("hostname", port, {username: "test", password: "test", login: true});
+
+upsData.on('connect', function() {
+  console.log("Connected!");
+});
+
+```
+See [example.js](example.js) for the example used to generate the output below.
+
+##Methods
+
+`.connect()` attempts to connect and log in to the NUT server
+`.list()` requests a list from the NUT server using LIST UPS
+`.vars()` requests a list of varibles from the NUT server using LIST VARS
+`.var(varName)` requests a single variable from the NUT server using GET VAR
+
+##Events
+
+`connect` on successful connection to the NUT server
+`list` on the return of LIST UPS
+`vars` on the return of LIST VARS
+`var` on the return of GET VAR
+`error` on an error of any of the above
 
 ##Output
 
 ###UPS LIST
-```
+```JSON
 [{ deviceName: 'cyberpower', humanName: 'NAS UPS', data: [] }]
 ```
 
 ###LIST VARS
-```
+```JSON
 {
   deviceName: 'cyberpower',
   humanName: 'NAS UPS',
@@ -62,7 +86,7 @@ See `example.js` for working example.
 ```
 
 ###GET VAR
-```
+```JSON
 {
   deviceName: 'cyberpower',
   humanName: 'NAS UPS',
